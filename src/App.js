@@ -1,25 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react';
+import ReactSlider from './components/ReactSlider';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// const App = () => <ReactSlider slides={slides} />;
+
+function App () {
+  return <ReactSlider slides={slides} />;
 }
+
+const slides = [
+  {
+    src:
+      'https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'Собаки не происходят от современных волков',
+    description:
+      'Собаки произошли от вида волков, который исчез из дикой природы тысячи лет назад. Сегодняшние американские и европейские волки являются только дальними родственниками, хотя у них с собаками и совпадает 99% ДНК.',
+  },
+  {
+    src:
+      'https://images.pexels.com/photos/981062/pexels-photo-981062.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title:
+      'Собаки имеют больший диапазон размеров, чем любые другие млекопитающие',
+    description:
+      'Из-за вмешательства человека в естественный отбор, существует огромная разница в размерах между породами собак - больше, чем у любых других млекопитающих, диких или прирученных. Однако существует предел физических различий собак. Вся физиология собаки, начиная от чихуахуа до датского дога, базируется на структуре тела древнего волка.',
+  },
+  {
+    src:
+      'https://images.pexels.com/photos/551628/pexels-photo-551628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'Собаки "улыбаются"',
+    description:
+      'Собаки улыбаются, но не обязательно по тем же причинам, что и мы. По мнению ученого-ветеринара, доктора Джона Брэдшоу, собака улыбнется, чтобы убедить своего владельца продемонстрировать ей свою любовь. Поэтому собаки не всегда счастливы, когда они "улыбаются" - они даже могут чувствовать себя немного тревожно и нуждаться в успокоении. Поэтому пойдите и покажите своему щенку как вы его любите.',
+  },
+  {
+    src:
+      'https://images.pexels.com/photos/1448055/pexels-photo-1448055.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'Из-за людей у собак может быть расстройство развития',
+    description:
+      'По данным National Geographic, люди могли нечаянно вызвать собачий эквивалент синдрома Вильямса у этих животных. В отличие от волков, собаки имеют различия в некоторых своих генах. У людей удаление этих генов приводит к синдрому Вильямса - состоянию, характеризующемуся когнитивными трудностями и "склонностью любить каждого". Это может объяснить, почему собаки более дружелюбные и, как правило, менее хитрые, чем волки.',
+  },
+];
 
 export default App;
